@@ -139,6 +139,8 @@ function attachMediaToSession(session) {
 
 $(document).ready(function () {
 
+    console.log("Config", config);
+
     var phone = new SIP.UA(config);
     phone.on('connected', function (e) {
         setState("Connected");
